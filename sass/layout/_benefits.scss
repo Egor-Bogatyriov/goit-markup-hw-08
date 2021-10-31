@@ -14,7 +14,18 @@
 
 .benefits {
   padding-bottom: 47px;
-  --card-set-item: 4;
+  // --card-set-item: 4;
+  @media screen and (min-width: 480px) {
+    --card-set-item: 1;
+  }
+
+  @media screen and (min-width: 768px) {
+    --card-set-item: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --card-set-item: 4;
+  }
 }
 
 .benefits-box__title {
@@ -24,11 +35,16 @@
   line-height: 1.2;
   text-transform: uppercase;
   color: var(--secondaty-title-color);
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .benefits-box__text {
-  max-width: 270px;
-
   @include font(normal, 14px, 1.7, 0.03em);
   color: var(--secondaty-text-color);
 }
