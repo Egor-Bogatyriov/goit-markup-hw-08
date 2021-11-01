@@ -1,15 +1,8 @@
 .activity {
   padding-top: 47px;
-  @media screen and (min-width: 480px) {
-    visibility: hidden;
-  }
 
-  @media screen and (min-width: 768px) {
-    visibility: hidden;
-  }
-
-  @media screen and (min-width: 1200px) {
-    visibility: visible;
+  @media screen and (max-width: 1199px) {
+    display: none;
   }
 }
 
