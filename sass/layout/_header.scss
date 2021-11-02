@@ -8,8 +8,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
   @media screen and (max-width: 767px) {
     display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    margin-left: 84px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -29,6 +41,7 @@
   &:focus {
     color: var(--cursor-text-color);
   }
+  
 }
 
 .current-link {
@@ -59,6 +72,9 @@
   &:focus {
     color: var(--cursor-text-color);
   }
+  @media screen and (min-width: 768px) {
+    padding-top: 10px;
+  }
 }
 
 .header {
@@ -68,6 +84,12 @@
 .header__container {
   display: flex;
   align-items: center;
+
+  @media screen and(max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+  }
 }
 
 .header__navigation {
@@ -93,6 +115,7 @@
   &:not(:last-child) {
     margin-right: 50px;
   }
+
 }
 
 .header-contacts__mail-icon {
@@ -114,7 +137,13 @@
 }
 
 // mobile button
+
+
 .menu-open-btn, .menu-close-btn {
+  display: none;
+
+  @media screen and (max-width: 767px) {
+  display: block;
   width: 40px;
   height: 40px;
   display: flex;
@@ -124,11 +153,20 @@
   margin-left: auto;
   background-color: transparent;
   cursor: pointer;
+  }
 }
 
-.menu-open-btn__icon-open, .menu-close-btn__icon-close {
-  width: 40px;
-  height: 40px;
+.menu-close-btn{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+
+
+.menu-close-btn__icon-close {
+  width: 19px;
+  height: 19px;
   
 }
 
@@ -138,6 +176,15 @@
   position: absolute;
   background-color: #fff;
   padding: 40px 20px 50px 40px;
+
+  position: relative;
+
+}
+.mob-menu-wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 
@@ -153,10 +200,11 @@ line-height: 47px;
 letter-spacing: 0.02em;
 
 color: var(--secondaty-title-color);
-}
 
-.mob-menu__list {
-  margin-bottom: 302px;
+  &:hover,
+  &:focus {
+    color: var(--cursor-text-color);
+  }
 }
 
 .mob-menu__tel {
@@ -178,4 +226,28 @@ color: var(--secondaty-title-color);
   line-height: 28px;
   letter-spacing: 0.02em;
   color: var(--secondaty-text-color);
+}
+
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 64px;
+}
+
+.social__item {
+  margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33,33,33,0.2);
+}
+
+.social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  
+  letter-spacing: 0.02em;
+
+  color: #2196F3;
+
 }

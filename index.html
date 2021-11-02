@@ -37,7 +37,7 @@
                         </a>
                     </li>
                     <li class="header-contacts__item icon-smartphone">
-                        <a class="header-contacts__link link" href="tel:+380961111111">
+                        <a class="header-contacts__link  link" href="tel:+380961111111">
                             <svg class="header-contacts__phone-icon">
                                 <use href="./images/icon-svg/sprite.svg#icon-smartphone"></use>
                             </svg>
@@ -52,27 +52,44 @@
                 </button>
             </div>
         </div>
-            <div class="backdrop">
+            <div class="backdrop is-hidden">
                 <div class="mob-menu">
                     <button class="menu-close-btn">
                         <svg class="menu-close-btn__icon-close">
                             <use href="./images/icon-svg/sprite.svg#icon-close"></use>
                         </svg>
-                </button>
-                    <div class="mob-menu__content">
-                        <ul class="mob-menu__list list">
-                            <li class="mob-menu__item"><a class="mob-menu__link link" href="./index.html">Студия</a></li>
-                            <li class="mob-menu__item"><a class="mob-menu__link link" href="./portfolio.html">Портфолио</a></li>
-                            <li class="mob-menu__item"><a class="mob-menu__link link" href="">Контакты</a></li>
-                        </ul>
+                    </button>
+                    <div class="mob-menu-wrapper">
+                        <div class="mob-menu__content">
+                            <ul class="mob-menu__list list">
+                                <li class="mob-menu__item"><a class="mob-menu__link link" href="./index.html">Студия</a></li>
+                                <li class="mob-menu__item"><a class="mob-menu__link link" href="./portfolio.html">Портфолио</a></li>
+                                <li class="mob-menu__item"><a class="mob-menu__link link" href="">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="social">
                             <a class="mob-menu__tel link" href="tel:+380961111111">
                                 +38 096 111 11 11
                             </a>
                             <a class="mob-menu__mail link" href="mailto:info@devstudio.com">
                                 info@devstudio.com
                             </a>
+                            <ul class="social__list list">
+                                <li class="social__item">
+                                    <a class="social__link link" href="" lang="en">Instagram</a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link link" href="" lang="en">Twitter</a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link link" href="" lang="en">Facebook</a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link link" href="" lang="en">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    
                 </div>
             </div>
     </header>
@@ -235,8 +252,8 @@
                         /images/team-tablet/team-1-2x.jpg 2x
                                     " media="(min-width: 768px)" />
                         <source srcset="
-                        /images/team-mob/team-1-1x.jpg 1x,
-                        /images/team-mob/team-1-2x.jpg 2x            
+                        /images/team-mob/team-2-1x.jpg 1x,
+                        /images/team-mob/team-2-2x.jpg 2x            
                                     " media="(min-width: 320px)" />            
                         
                         <img class="team__img" src="./images/team-desctop/team-1-1x.jpg" alt="на фото Игорь Демьяненко">
