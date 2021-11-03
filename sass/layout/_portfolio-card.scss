@@ -41,7 +41,10 @@
 }
 
 .examples-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
 
   &:hover,
   &:focus {
@@ -68,4 +71,23 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+
+  flex-grow: 1;
+}
+
+.portfolio-img {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 294px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 294px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 294px;
+  }
 }

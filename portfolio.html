@@ -13,32 +13,31 @@
 </head>
 <body>
     <!-- шапка сайта -->
-    <!-- <header class="header">
+    <header  
+    class="header">
         <div class="container header__container">
             <nav class="header__navigation">
-                <a href="./index.html" class="logo link" lang="eu"> Web<span class="logo-header">Studio</span> </a>
-    
+            <a href="./index.html" class="logo link" lang="eu"> Web<span class="logo-header">Studio</span> </a>
+
                 <ul class="header-list list">
-                    <li class="header-list__item"><a class="header-list__link link"
-                            href="./index.html">Студия</a></li>
-                    <li class="header-list__item"><a class="header-list__link link current-link" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="header-list__item"><a class="header-list__link link" href="">Контакты</a></li>
+                <li class="header-list__item"><a class="header-list__link link current-link" href="./index.html">Студия</a></li>
+                <li class="header-list__item"><a class="header-list__link link" href="./portfolio.html">Портфолио</a></li>
+                <li class="header-list__item"><a class="header-list__link link" href="">Контакты</a></li>
                 </ul>
+            
             </nav>
     
-            <div class="header-contacts">
                 <ul class="header-contacts__list list">
                     <li class="header-contacts__item icon-mail">
-                        <a class="header-contacts__link link" href="mailto:info@devstudio.com"><svg
-                                class="header-contacts__mail-icon">
-                                <use href="./images/icon-svg/sprite.svg#icon-envelope"></use>
-                            </svg>
-                            info@devstudio.com
+                        <a class="header-contacts__link link" href="mailto:info@devstudio.com"
+                        ><svg class="header-contacts__mail-icon">
+                            <use href="./images/icon-svg/sprite.svg#icon-envelope"></use>
+                        </svg> 
+                        info@devstudio.com
                         </a>
                     </li>
                     <li class="header-contacts__item icon-smartphone">
-                        <a class="header-contacts__link link" href="tel:+380961111111">
+                        <a class="header-contacts__link  link" href="tel:+380961111111">
                             <svg class="header-contacts__phone-icon">
                                 <use href="./images/icon-svg/sprite.svg#icon-smartphone"></use>
                             </svg>
@@ -46,9 +45,55 @@
                         </a>
                     </li>
                 </ul>
+                <button class="menu-open-btn">
+                        <svg class="menu-open-btn__icon-open">
+                            <use href="./images/icon-svg/sprite.svg#icon-menupx"></use>
+                        </svg>
+                </button>
             </div>
         </div>
-    </header> -->
+            <div class="backdrop is-hidden">
+                <div class="mob-menu">
+                    <button class="menu-close-btn">
+                        <svg class="menu-close-btn__icon-close">
+                            <use href="./images/icon-svg/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <div class="mob-menu-wrapper">
+                        <div class="mob-menu__content">
+                            <ul class="mob-menu__list list">
+                                <li class="mob-menu__item"><a class="mob-menu__link link" href="./index.html">Студия</a></li>
+                                <li class="mob-menu__item"><a class="mob-menu__link link" href="./portfolio.html">Портфолио</a></li>
+                                <li class="mob-menu__item"><a class="mob-menu__link link" href="">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="social">
+                            <a class="mob-menu__tel link" href="tel:+380961111111">
+                                +38 096 111 11 11
+                            </a>
+                            <a class="mob-menu__mail link" href="mailto:info@devstudio.com">
+                                info@devstudio.com
+                            </a>
+                            <ul class="social__list list">
+                                <li class="social__item">
+                                    <a class="social__link link" href="" lang="en">Instagram</a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link link" href="" lang="en">Twitter</a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link link" href="" lang="en">Facebook</a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link link" href="" lang="en">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    
     <!-- блок герой -->
     <main>
         <section class="section">
@@ -70,7 +115,22 @@
             <li class="examples flex-item text-item">
                 <a href="" class="examples-link link">
                     <div class="hidden-top-text">
-                    <img src="./images/images-porfolio/img.jpg" alt="скрин веб-сайта" width="370" height="294">
+                        <picture>
+                            <source srcset="
+                            /images/portfolio-desktop/portfolio-1-desctop-1x.jpg 1x,
+                            /images/portfolio-desktop/portfolio-1-desctop-2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                            <source srcset="
+                            /images/portfolio-tabl/portfolio-1-tab-1x.jpg 1x,
+                            /images/portfolio-tabl/portfolio-1-tab-2x.jpg 2x
+                                        " media="(min-width: 768px)" />
+                            <source srcset="
+                            /images/portfolio-mb/portfolio-1-mob-1x.jpg 1x,
+                            /images/portfolio-mb/portfolio-1-mob-2x.jpg 2x            
+                                        " media="(min-width: 320px)" />            
+                            
+                            <img class="portfolio-img" src="/images/portfolio-desktop/portfolio-1-desctop-1x.jpg" alt="скрин веб-сайта" width="370" height="294">
+                        </picture>
                     <p class="top-text">
                         Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.
@@ -85,7 +145,22 @@
             <li class="examples flex-item text-item">
                 <a href="" class="examples-link link">
                     <div class="hidden-top-text">
-                    <img src="./images/images-porfolio/img-2.jpg" alt="постер с баскетболистами" width="370" height="294">
+                        <picture>
+                            <source srcset="
+                            /images/portfolio-desktop/portfolio-2-desctop-1x.jpg 1x,
+                            /images/portfolio-desktop/portfolio-2-desctop-2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                            <source srcset="
+                            /images/portfolio-tabl/portfolio-2-tab-1x.jpg 1x,
+                            /images/portfolio-tabl/portfolio-2-tab-2x.jpg 2x
+                                        " media="(min-width: 768px)" />
+                            <source srcset="
+                            /images/portfolio-mb/portfolio-2-mob-1x.jpg 1x,
+                            /images/portfolio-mb/portfolio-2-mob-2x.jpg 2x            
+                                        " media="(min-width: 320px)" />            
+                            
+                                        <img class="portfolio-img" src="/images/portfolio-desktop/portfolio-2-desctop-1x.jpg" alt="постер с баскетболистами">
+                        </picture>
                     <p class="top-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem expedita deleniti vel eveniet corporis. Sit blanditiis, dolorum nobis labore veritatis quod sed nisi nostrum molestiae consequuntur mollitia eveniet nulla.
                     </p>
@@ -99,7 +174,23 @@
             <li class="examples flex-item text-item">
                 <a href="" class="examples-link link">
                     <div class="hidden-top-text">
-                    <img src="./images/images-porfolio/img-3.jpg" alt="логотип ресторана" width="370" height="294">
+                        <picture>
+                            <source srcset="
+                            /images/portfolio-desktop/portfolio-3-desctop-1x.jpg 1x,
+                            /images/portfolio-desktop/portfolio-3-desctop-2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                            <source srcset="
+                            /images/portfolio-tabl/portfolio-3-tab-1x.jpg 1x,
+                            /images/portfolio-tabl/portfolio-3-tab-2x.jpg 2x
+                                        " media="(min-width: 768px)" />
+                            <source srcset="
+                            /images/portfolio-mb/portfolio-3-mob-1x.jpg 1x,
+                            /images/portfolio-mb/portfolio-3-mob-2x.jpg 2x            
+                                        " media="(min-width: 320px)" />            
+                            
+                                        <img class="portfolio-img" src="/images/portfolio-desktop/portfolio-3-desctop-1x.jpg" alt="логотип ресторана" >
+                        </picture>
+                    
                     <p class="top-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem expedita deleniti vel eveniet
                         corporis. Sit blanditiis, dolorum nobis labore veritatis quod sed nisi nostrum molestiae consequuntur mollitia
@@ -115,7 +206,23 @@
             <li class="examples flex-item text-item">
                 <a href="" class="examples-link link">
                     <div class="hidden-top-text">
-                    <img src="./images/images-porfolio/img-4.jpg" alt="наушники" width="370" height="294">
+                        <picture>
+                            <source srcset="
+                            /images/portfolio-desktop/portfolio-4-desctop-1x.jpg 1x,
+                            /images/portfolio-desktop/portfolio-4-desctop-2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                            <source srcset="
+                            /images/portfolio-tabl/portfolio-4-tab-1x.jpg 1x,
+                            /images/portfolio-tabl/portfolio-4-tab-2x.jpg 2x
+                                        " media="(min-width: 768px)" />
+                            <source srcset="
+                            /images/portfolio-mb/portfolio-4-mob-1x.jpg 1x,
+                            /images/portfolio-mb/portfolio-4-mob-2x.jpg 2x            
+                                        " media="(min-width: 320px)" />            
+                            
+                                        <img class="portfolio-img" src="/images/portfolio-desktop/portfolio-4-desctop-1x.jpg" alt="наушники" >
+                        </picture>
+                    
                     <p class="top-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem expedita deleniti vel eveniet
                         corporis. Sit blanditiis, dolorum nobis labore veritatis quod sed nisi nostrum molestiae consequuntur mollitia
@@ -131,7 +238,23 @@
             <li  class="examples flex-item text-item">
                 <a href="" class="examples-link link">
                     <div class="hidden-top-text">
-                    <img src="./images/images-porfolio/img-5.jpg" alt="два бокса" width="370" height="294">
+                        <picture>
+                            <source srcset="
+                            /images/portfolio-desktop/portfolio-5-desctop-1x.jpg 1x,
+                            /images/portfolio-desktop/portfolio-5-desctop-2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                            <source srcset="
+                            /images/portfolio-tabl/portfolio-5-tab-1x.jpg 1x,
+                            /images/portfolio-tabl/portfolio-5-tab-2x.jpg 2x
+                                        " media="(min-width: 768px)" />
+                            <source srcset="
+                            /images/portfolio-mb/portfolio-5-mob-1x.jpg 1x,
+                            /images/portfolio-mb/portfolio-5-mob-2x.jpg 2x          
+                                        " media="(min-width: 320px)" />            
+                            
+                                        <img class="portfolio-img" src="/images/portfolio-desktop/portfolio-5-desctop-1x.jpg" alt="два бокса" >
+                        </picture>
+                    
                     <p class="top-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem expedita deleniti vel eveniet
                         corporis. Sit blanditiis, dolorum nobis labore veritatis quod sed nisi nostrum molestiae consequuntur mollitia
@@ -147,7 +270,23 @@
             <li class="examples flex-item text-item">
                 <a href="" class="examples-link link">
                     <div class="hidden-top-text">
-                    <img src="./images/images-porfolio/img-6.jpg" alt="экран mac" width="370" height="294">
+                        <picture>
+                            <source srcset="
+                            /images/portfolio-desktop/portfolio-6-desctop-1x.jpg 1x,
+                            /images/portfolio-desktop/portfolio-6-desctop-2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                            <source srcset="
+                            /images/portfolio-tabl/portfolio-6-tab-1x.jpg 1x,
+                            /images/portfolio-tabl/portfolio-6-tab-2x.jpg 2x
+                                        " media="(min-width: 768px)" />
+                            <source srcset="
+                            /images/portfolio-mb/portfolio-6-mob-1x.jpg 1x,
+                            /images/portfolio-mb/portfolio-6-mob-2x.jpg 2x          
+                                        " media="(min-width: 320px)" />            
+                            
+                                        <img class="portfolio-img" src="/images/portfolio-desktop/portfolio-6-desctop-1x.jpg" alt="экран mac" >
+                        </picture>
+                    
                     <p class="top-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem expedita deleniti vel eveniet
                         corporis. Sit blanditiis, dolorum nobis labore veritatis quod sed nisi nostrum molestiae consequuntur mollitia
@@ -163,7 +302,23 @@
             <li class="examples flex-item text-item">
                 <a href="" class="examples-link link">
                     <div class="hidden-top-text">
-                    <img src="./images/images-porfolio/img-7.jpg" alt="журнал" width="370" height="294">
+                        <picture>
+                            <source srcset="
+                            /images/portfolio-desktop/portfolio-7-desctop-1x.jpg 1x,
+                            /images/portfolio-desktop/portfolio-7-desctop-2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                            <source srcset="
+                            /images/portfolio-tabl/portfolio-7-tab-1x.jpg 1x,
+                            /images/portfolio-tabl/portfolio-7-tab-2x.jpg 2x
+                                        " media="(min-width: 768px)" />
+                            <source srcset="
+                            /images/portfolio-mb/portfolio-7-mob-1x.jpg 1x,
+                            /images/portfolio-mb/portfolio-7-mob-2x.jpg 2x            
+                                        " media="(min-width: 320px)" />            
+                            
+                                        <img class="portfolio-img" src="/images/portfolio-desktop/portfolio-7-desctop-1x.jpg" alt="журнал" >
+                        </picture>
+                    
                     <p class="top-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem expedita deleniti vel eveniet
                         corporis. Sit blanditiis, dolorum nobis labore veritatis quod sed nisi nostrum molestiae consequuntur mollitia
@@ -179,7 +334,23 @@
             <li class="examples flex-item text-item">
                 <a href="" class="examples-link link">
                     <div class="hidden-top-text">
-                    <img src="./images/images-porfolio/img-8.jpg" alt="ярлык" width="370" height="294">
+                        <picture>
+                            <source srcset="
+                            /images/portfolio-desktop/portfolio-8-desctop-1x.jpg 1x,
+                            /images/portfolio-desktop/portfolio-8-desctop-2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                            <source srcset="
+                            /images/portfolio-tabl/portfolio-8-tab-1x.jpg 1x,
+                            /images/portfolio-tabl/portfolio-8-tab-2x.jpg 2x
+                                        " media="(min-width: 768px)" />
+                            <source srcset="
+                            /images/portfolio-mb/portfolio-8-mob-1x.jpg 1x,
+                            /images/portfolio-mb/portfolio-8-mob-2x.jpg 2x             
+                                        " media="(min-width: 320px)" />            
+                            
+                                        <img class="portfolio-img" src="/images/portfolio-desktop/portfolio-8-desctop-1x.jpg" alt="ярлык" >
+                        </picture>
+                    
                     <p class="top-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem expedita deleniti vel eveniet
                         corporis. Sit blanditiis, dolorum nobis labore veritatis quod sed nisi nostrum molestiae consequuntur mollitia
@@ -195,7 +366,23 @@
             <li class="examples flex-item text-item">
                 <a href="" class="examples-link link">
                     <div class="hidden-top-text">
-                    <img src="./images/images-porfolio/img-9.jpg" alt="лендинг на открытом ноутбуке" width="370" height="294">
+                        <picture>
+                            <source srcset="
+                            /images/portfolio-desktop/portfolio-9-desctop-1x.jpg 1x,
+                            /images/portfolio-desktop/portfolio-9-desctop-2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                            <source srcset="
+                            /images/portfolio-tabl/portfolio-9-tab-1x.jpg 1x,
+                            /images/portfolio-tabl/portfolio-9-tab-2x.jpg 2x
+                                        " media="(min-width: 768px)" />
+                            <source srcset="
+                            /images/portfolio-mb/portfolio-9-mob-1x.jpg 1x,
+                            /images/portfolio-mb/portfolio-9-mob-2x.jpg 2x            
+                                        " media="(min-width: 320px)" />            
+                            
+                                        <img class="portfolio-img" src="/images/portfolio-desktop/portfolio-9-desctop-1x.jpg" alt="лендинг на открытом ноутбуке" >
+                        </picture>
+                    
                     <p class="top-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem expedita deleniti vel eveniet
                         corporis. Sit blanditiis, dolorum nobis labore veritatis quod sed nisi nostrum molestiae consequuntur mollitia
