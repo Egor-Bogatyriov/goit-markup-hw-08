@@ -17,7 +17,8 @@
     flex-direction: column;
     align-items: start;
 
-    margin-left: 84px;
+    
+    margin-left: auto;
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
@@ -98,7 +99,13 @@
 }
 
 .header .logo {
-  margin-right: 95px;
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 95px;
+  }
 }
 
 .header-list {
@@ -217,6 +224,10 @@ color: var(--secondaty-title-color);
 
   color: var(--cursor-text-color);
   margin-bottom: 32px;
+
+  @media screen and (max-width:480px){
+    font-size: 29px;
+  }
 }
 
 .mob-menu__mail {

@@ -183,8 +183,32 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn.modal-btn {
-  padding: 10px 52px;
+.modal-btn {
+  padding: 10px 55px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #2196f3;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 480px) {
+  .modal-btn {
+    font-size: 10px;
+  }
+}
+
+.modal-btn:hover, .modal-btn:focus {
+  background-color: #188ce8;
 }
 
 .svg-btn {
@@ -290,6 +314,30 @@ body {
   margin-left: 8px;
 }
 
+@media screen and (min-width: 320px) {
+  .chek-text {
+    font-size: 6px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .chek-text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .chek-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .chek-text {
+    font-size: 14px;
+  }
+}
+
 .chek-text span {
   width: 16px;
   height: 16px;
@@ -332,7 +380,6 @@ body {
 }
 
 .conditions-text {
-  font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
@@ -516,7 +563,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-left: 84px;
+    margin-left: auto;
   }
 }
 
@@ -599,8 +646,16 @@ body {
   align-items: center;
 }
 
-.header .logo {
-  margin-right: 95px;
+@media screen and (min-width: 768px) {
+  .header .logo {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .logo {
+    margin-right: 95px;
+  }
 }
 
 .header-list {
@@ -710,6 +765,12 @@ body {
   letter-spacing: 0.02em;
   color: var(--cursor-text-color);
   margin-bottom: 32px;
+}
+
+@media screen and (max-width: 480px) {
+  .mob-menu__tel {
+    font-size: 29px;
+  }
 }
 
 .mob-menu__mail {
@@ -845,6 +906,12 @@ body {
   padding: 10px 32px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 480px) {
+  .hero .hero__btn {
+    font-size: 10px;
+  }
 }
 
 .hero .hero__btn:hover, .hero .hero__btn:focus {
