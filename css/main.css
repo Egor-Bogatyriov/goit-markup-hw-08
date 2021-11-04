@@ -813,7 +813,7 @@ body {
 
 @media screen and (min-width: 320px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero-section/hero-img-mob.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-section/hero-img-mob.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -822,19 +822,19 @@ body {
 
 @media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero-section/hero-img-mob-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-section/hero-img-mob-2x.jpg);
   }
 }
 
 @media screen and (min-width: 320px) and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero-section/hero-img-tab.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-section/hero-img-tab.jpg);
   }
 }
 
 @media screen and (min-width: 320px) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero-section/hero-img-tab-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-section/hero-img-tab-2x.jpg);
   }
 }
 
@@ -1307,7 +1307,7 @@ body {
   color: var(--cursor-text-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .partner {
     --card-set-item: 2;
   }
