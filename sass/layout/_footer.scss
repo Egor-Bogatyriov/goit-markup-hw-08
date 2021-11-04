@@ -93,10 +93,12 @@
   }
 
   @media screen and (min-width: 1200px) {
+    text-align: start;
   }
 }
 
 .page-footer__email {
+  
   @media screen and (min-width: 480px) {
     display: block;
   }
@@ -106,6 +108,9 @@
 
   @media screen and (max-width: 1199px) {
     width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
   }
 }
 
@@ -178,6 +183,10 @@
 
     background-color: transparent;
     color: var(--primary-title-color);
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
   }
 
   .footer-btn {
@@ -186,9 +195,14 @@
     display: flex;
     position: relative;
 
-    @media screen and (min-width: 320px) {
+    @media screen and (min-width: 320px) and (max-width:1199px){
       font-size: 16px;
+      margin-top: 20px;
     }
+    // @media screen and (min-width: 320px) {
+    //   padding-right: 29px;
+    //   padding-left: 62px;
+    // }
   }
 
   .icon-send {
