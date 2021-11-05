@@ -25,29 +25,22 @@
 }
 
 .filter-list {
-
-  @media screen and (min-width: 480px) {
-    display: flex;
+  display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: start;
-  }
+    margin-top: -15px;
+    margin-left: -8px;
 
   @media screen and (min-width: 768px) {
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-
-  @media screen and (min-width: 1200px) {
-    flex-wrap: nowrap;
     justify-content: center;
   }
 }
 
 .filter-item {
-  margin-right: 8px;
-  margin-bottom: 15px;
+  margin-left: 8px;
+  margin-top: 15px;
 }
 
 .current-btn {

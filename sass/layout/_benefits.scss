@@ -35,10 +35,9 @@
   line-height: 1.2;
   text-transform: uppercase;
   color: var(--secondaty-title-color);
-  @media screen and (min-width: 480px) {
-    text-align: center;
-  }
 
+  text-align: center;
+  
   @media screen and (min-width: 768px) {
     text-align: left;
   }
